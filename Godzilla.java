@@ -14,7 +14,7 @@ package zork;
 import java.util.Random;
 
 /**
- * Enter type purpose here
+ * To create instances of the monster class
  *
  * <hr>
  * Date created: Nov 2, 2018
