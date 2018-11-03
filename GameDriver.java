@@ -22,7 +22,7 @@ import java.util.Scanner;
  * <hr>
  * Date created: Nov 1, 2018
  * <hr>
- * @author Dustin Hopkins
+ * @author // add author
  */
 public class GameDriver
 {
