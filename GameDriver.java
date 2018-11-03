@@ -33,7 +33,7 @@ public class GameDriver
 		String directionIndicated = "Unspecified"; //direction the player/user wishes to go
 		
 		
-		Game currentGame = new Game(); //game instance user will play in
+		Game currentGame = new Game(); //game instance user will play in forever
 		Player player = new Player(); //represents the user
 		Monster monsterSpawn; //monsters are generally spawned as game progresses
 		
