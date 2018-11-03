@@ -22,7 +22,7 @@ import java.util.Random;
  * <hr>
  * Date created: Nov 1, 2018
  * <hr>
- * @author
+ * @author Dustin Hopkins, Audrey Chaffin, Reid Connor
  */
 public class Weapon
 {
@@ -58,7 +58,7 @@ public class Weapon
 	{	
 		int damageValue = 0; //damage for superclass / unspecified weapon type; overwritten if the referenced weapon is specified/exists
 		
-		//asses the subclass name of the referenced Weapon object and get its specified damage
+		//passes the subclass name of the referenced Weapon object and get its specified damage
 		
 		if (this.getClass ( ).getName().equals("Stick"))
 		{
@@ -69,6 +69,22 @@ public class Weapon
 		{
 			damageValue = ((Sword)this).getWeaponDamage();
 		}
+		
+		else if (this.getClass ( ).getName().equals("Bazooka"))
+		{
+			damageValue = ((Bazooka)this).getWeaponDamage();
+		}
+		
+		else if (this.getClass ( ).getName().equals("AtomicBomb"))
+		{
+			damageValue = ((AtomicBomb)this).getWeaponDamage();
+		}
+		
+		else if (this.getClass ( ).getName().equals("PotatoCannon"))
+		{
+			damageValue = ((PotatoCannon)this).getWeaponDamage();
+		}
+		
 		
 		return damageValue;
 	} //end public int getWeaponDamage()
@@ -136,13 +152,18 @@ public class Weapon
 	 */
 	public static Weapon spawnWeapon()
 	{
-		final int numberOfWeapons = 2; //update as weapons are added
+		final int numberOfWeapons = 5; //update as weapons are added
 		
 		//Create weapons in order to access attributes / randomly select a weapon
 		Sword sword = new Sword();
 		Stick stick = new Stick();
+		Bazooka bazooka = new Bazooka();
+		AtomicBomb atomicBomb = new AtomicBomb();
+		PotatoCannon potatoCannon = new PotatoCannon();
 		
-		Weapon[] weapons = new Weapon[] {sword, stick}; //store weapons in an array to randomly grab one to use in Game
+		
+		
+		Weapon[] weapons = new Weapon[] {sword, stick,bazooka,atomicBomb,potatoCannon}; //store weapons in an array to randomly grab one to use in Game
 		
 		int randomWeapon; //weapon chosen		
 		Random rng = new Random (); //create generator based upon current number of weapons

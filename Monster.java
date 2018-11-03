@@ -21,7 +21,7 @@ import java.util.Random;
  * <hr>
  * Date created: Nov 1, 2018
  * <hr>
- * @author Dustin Hopkins
+ * @author Dustin Hopkins, Audrey Chaffin, Reid Connor
  */
 public class Monster extends Participant
 {
@@ -37,9 +37,7 @@ public class Monster extends Participant
 	 */
 	public Monster()
 	{
-		//monster starting health and damage dealt
-		this.setHealth(20);
-		this.setDamage(4);	
+					//not used because each subclass will set it's own health
 	}
 	
 	/**

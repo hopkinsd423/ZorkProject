@@ -12,9 +12,10 @@
  */
 package zork;
 
+import java.util.Random;
 import java.util.Scanner;
 
-//test edit here
+
 
 /**
  * Creates a Game instance which responds to user input accordingly
@@ -22,7 +23,7 @@ import java.util.Scanner;
  * <hr>
  * Date created: Nov 1, 2018
  * <hr>
- * @author // add author
+ * @author Dustin Hopkins, Audrey Chaffin, Reid Connor
  */
 public class GameDriver
 {
@@ -33,9 +34,10 @@ public class GameDriver
 		String directionIndicated = "Unspecified"; //direction the player/user wishes to go
 		
 		
-		Game currentGame = new Game(); //game instance user will play in forever
+		Game currentGame = new Game(); //game instance user will play in
 		Player player = new Player(); //represents the user
-		Monster monsterSpawn; //monsters are generally spawned as game progresses
+		Monster monsterSpawn =
+		null; //monsters are generally spawned as game progresses
 		
 		
 		for (int i = 0; i < currentGame.getCellCount( ) + 1; i = currentGame.getPlayerCell()) //for each cell in the instantiated game, with each cycle pulling the players location
@@ -91,13 +93,65 @@ public class GameDriver
 				break; //terminate the for loop (user input - monster fight loop)
 			}
 			
-			
+	/**
+	 * *******CHANGES************************
+	 * 
+	 * 
+	 * 
+	 * 
+	 *  *******CHANGES************************
+
+	 * 
+	 * 
+	 *  *******CHANGES************************
+
+	 * 
+	 * 
+	 * 
+	 *  *******CHANGES************************
+
+	 * 
+	 * 
+	 */
 			if(currentGame.getHasMonster(currentGame.getPlayerCell())) //if there is a monster in the same cell as the player which remains undefeated
 			{
-				monsterSpawn = new Monster();
-				System.out.println(currentGame.displayGame());
-				System.out.println("\nA monster is found in the cell and a battle begins!\n");
+				Random rand = new Random();//Create an object from the random class 
 				
+				int randomNum = rand.nextInt((3 - 1) + 1) + 1;//generate a random number between 1 2 and 3 here. 
+																								// This will be used to determine which of the three monsters will spawn
+			
+						if (randomNum ==1)
+						{
+							monsterSpawn = new Hitler();                 //Hitler is spawned
+							System.out.println(currentGame.displayGame());
+							System.out.println("\nYou're fighing Hitler!!!!!\n");
+						}
+							else if(randomNum==2)
+							{
+								monsterSpawn = new Godzilla();              //godzilla is spawned
+								System.out.println(currentGame.displayGame());
+								System.out.println("\nYou're fighing GODZILLA!!!!!\n");
+							}
+							else if(randomNum==3)
+							{
+								monsterSpawn = new Thanos();//thanos is spawned 
+								System.out.println(currentGame.displayGame());
+								System.out.println("\nYou're fighing THANOS!!!!!!!!\n");
+							}
+						
+				/**
+				 * END OF CHANGES
+				 * 
+				 * 
+				 * * END OF CHANGES
+				 * 
+				 * 
+				 * * END OF CHANGES
+				 * 
+				 * 
+				 * * END OF CHANGES
+				 * 
+				 */
 				while((monsterSpawn.getHealth() > 0) && player.getHealth() > 0) //while both the player and monster are alive
 				{		
 
