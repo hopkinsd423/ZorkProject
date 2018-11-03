@@ -27,6 +27,14 @@ import java.util.Scanner;
  */
 public class GameDriver
 {
+	/**
+	 * Main method for the game. This handles all functionality of the game. 
+	 *
+	 * <hr>
+	 * Date created: Nov 2, 2018
+	 * <hr>
+	 * @param args
+	 */
 	public static void main (String [ ] args)
 	{		
 		Scanner userInput = new Scanner(System.in);

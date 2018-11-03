@@ -14,7 +14,7 @@ package zork;
 import java.util.Random;
 
 /**
- * Enter type purpose here
+ * To create instances of the Thanos class
  *
  * <hr>
  * Date created: Nov 2, 2018
@@ -26,13 +26,29 @@ public class Thanos extends Monster
 
 	
 
+	/**
+	 * default constructor
+	 *
+	 * <hr>
+	 * Date created: Nov 2, 2018
+	 * <hr>
+	 * 
+	 */
 	public Thanos()
 	{
 		this.setHealth(20);
 		this.setDamage(6);	
 	}
 	
-	
+
+	/**
+	 * Method to handle the attack and to get the damage
+	 *
+	 * <hr>
+	 * Date created: Nov 2, 2018
+	 * <hr>
+	 * @return damage, the damage done by Thanos
+	 */
 	public int attack()
 	{
 	int damage = this.getDamage();

@@ -13,7 +13,7 @@ package zork;
 
 
 /**
- * Enter type purpose here
+ * To create instances of the bazooka class
  *
  * <hr>
  * Date created: Nov 3, 2018
@@ -36,21 +36,20 @@ public class Bazooka extends Weapon
 	 */
 	public Bazooka()
 	{
-		//Sword subclass default damage bonus and weapon name
+		//Bazooka subclass default damage bonus and weapon name
 		this.setWeaponDamage (10);
 		this.setWeaponName ("BZ");
 	}
 	
 	/**
-	 * Enter method description here         
+	 * Method to get weapon damage      
 	 *
 	 * <hr>
 	 * Date created: Nov 1, 2018
 	 *
 	 * <hr>
-	 * @return
-	 * @see zorkesque.Weapon#getWeaponDamage()
-	 * @override
+	 * @return weaponDamage, the damage done
+	 * 
 	 */
 	public int getWeaponDamage()
 	{	
@@ -58,18 +57,16 @@ public class Bazooka extends Weapon
 	}
 	
 	/**
-	 * Enter method description here         
+	 * Method to get weapon name      
 	 *
 	 * <hr>
 	 * Date created: Nov 1, 2018
 	 *
 	 * <hr>
-	 * @return
-	 * @see zorkesque.Weapon#getWeaponName()
-	 * @override
+	 * @return weaponName, the weapon's name
 	 */
 	public String getWeaponName()
 	{
 		return this.weaponName;
 	}	
-} //end public class Sword extends Weapon
+} //end public class Bazooka extends Weapon

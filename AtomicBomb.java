@@ -13,7 +13,7 @@ package zork;
 
 
 /**
- * Enter type purpose here
+ * subclass used to spawn bombs from the parent class weapon
  *
  * <hr>
  * Date created: Nov 3, 2018
@@ -33,21 +33,21 @@ public class AtomicBomb extends Weapon
 		 */
 		public AtomicBomb()
 		{
-			//Sword subclass default damage bonus and weapon name
+			//AtomicBomb  subclass default damage bonus and weapon name
 			this.setWeaponDamage (999999995);
 			this.setWeaponName ("AB");
 		}
 		
 		/**
-		 * Enter method description here         
+		 * Gets the weapon damage        
 		 *
 		 * <hr>
 		 * Date created: Nov 1, 2018
 		 *
 		 * <hr>
-		 * @return
-		 * @see zorkesque.Weapon#getWeaponDamage()
-		 * @override
+		 * @return weaponDamage    The damage done
+		 *
+		 *
 		 */
 		public int getWeaponDamage()
 		{	
@@ -55,18 +55,17 @@ public class AtomicBomb extends Weapon
 		}
 		
 		/**
-		 * Enter method description here         
+		 * Gets the weapon name        
 		 *
 		 * <hr>
 		 * Date created: Nov 1, 2018
 		 *
 		 * <hr>
-		 * @return
-		 * @see zorkesque.Weapon#getWeaponName()
-		 * @override
+		 * @return weaponName, the weapons name
+	
 		 */
 		public String getWeaponName()
 		{
 			return this.weaponName;
 		}	
-	} //end public class Sword extends Weapon
+	} //end public class AtomicBomb extends Weapon

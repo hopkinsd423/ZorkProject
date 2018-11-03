@@ -24,12 +24,27 @@ import java.util.Random;
 public class Godzilla extends Monster
 {
 
+	/**
+	 * default constructor
+	 *
+	 * <hr>
+	 * Date created: Nov 2, 2018
+	 * <hr>
+	 * 
+	 */
 	public Godzilla()
 	{
 		this.setHealth(30);
 		this.setDamage(10);	
 	}
-	
+	/**
+	 * Method to handle the attack and to get the damage
+	 *
+	 * <hr>
+	 * Date created: Nov 2, 2018
+	 * <hr>
+	 * @return damage, the damage done by Godzilla
+	 */
 	public int attack()
 	{
 	int damage = this.getDamage();

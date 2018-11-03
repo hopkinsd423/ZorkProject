@@ -14,7 +14,7 @@ package zork;
 import java.util.Random;
 
 /**
- * Enter type purpose here
+ * To create instances of the hitler class
  *
  * <hr>
  * Date created: Nov 2, 2018
@@ -24,6 +24,14 @@ import java.util.Random;
 public class Hitler extends Monster
 {
 
+	/**
+	 * default constructor
+	 *
+	 * <hr>
+	 * Date created: Nov 2, 2018
+	 * <hr>
+	 * 
+	 */
 	public Hitler()
 	{
 		this.setHealth(10);
@@ -31,7 +39,15 @@ public class Hitler extends Monster
 	}
 	
 	
-	
+
+	/**
+	 * Method to handle the attack and to get the damage
+	 *
+	 * <hr>
+	 * Date created: Nov 2, 2018
+	 * <hr>
+	 * @return damage, the damage done by Hitler
+	 */
 	public int attack()
 	{
 	int damage = this.getDamage();
