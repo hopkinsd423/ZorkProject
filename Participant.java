@@ -19,7 +19,7 @@ package zork;
  * <hr>
  * Date created: Nov 1, 2018
  * <hr>
- * @author Dustin Hopkins
+ * @author Dustin Hopkins, Audrey Chaffin, Reid Connor
  */
 public class Participant
 {

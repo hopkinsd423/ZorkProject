@@ -22,7 +22,7 @@ import java.util.Random;
  * <hr>
  * Date created: Nov 1, 2018
  * <hr>
- * @author Dustin Hopkins
+ * @author Dustin Hopkins, Audrey Chaffin, Reid Connor
  */
 public class Game
 {
@@ -72,6 +72,7 @@ public class Game
 				cells[i] = "|_M__|  ";
 				hasMonster[i] = true; // track monster for fighting purposes
 			}
+			
 			
 			else
 			{
